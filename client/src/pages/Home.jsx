@@ -43,107 +43,127 @@ const Home = () => {
   <div className="relative container-custom z-10">
     <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-```
-  {/* Left Content */}
-  <div className="text-white">
-    <span className="inline-block px-4 py-2 rounded-full bg-brand-accent/20 border border-brand-accent/30 text-brand-accent text-sm font-medium mb-6">
-      ✨ Quality Food Products
-    </span>
+  {/* Hero Section */}
+<section
+  className="relative min-h-[85vh] flex items-center overflow-hidden"
+  style={{
+    backgroundImage: `url(${heroImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-brand-ink/75"></div>
 
-    <h1 className="font-display text-5xl md:text-7xl font-semibold leading-tight mb-6">
-      Purity.
-      <br />
-      Hygiene.
-      <br />
-      <span className="text-brand-accent">
-        Consistent Quality.
-      </span>
-    </h1>
+  <div className="relative container-custom z-10 py-16">
+    <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
 
-    <p className="text-white/80 text-lg leading-relaxed max-w-xl mb-8">
-      Trusted supplier of premium Sugar and Poha products,
-      delivering purity, hygiene and reliability for households,
-      retailers and wholesale partners.
-    </p>
-
-    <div className="flex flex-wrap gap-4 mb-10">
-      <Link to="/products" className="btn-primary">
-        Explore Products
-      </Link>
-
-      <Link
-        to="/contact"
-        className="border border-white/30 px-8 py-3 rounded-full hover:bg-white hover:text-brand-ink transition-all"
-      >
-        Contact Us
-      </Link>
-    </div>
-
-    <div className="grid grid-cols-3 gap-6 max-w-lg">
-      <div>
-        <h3 className="text-3xl font-bold text-brand-accent">
-          100%
-        </h3>
-        <p className="text-white/60 text-sm">
-          Quality Checked
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-3xl font-bold text-brand-accent">
-          FSSAI
-        </h3>
-        <p className="text-white/60 text-sm">
-          Verified
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-3xl font-bold text-brand-accent">
-          24/7
-        </h3>
-        <p className="text-white/60 text-sm">
-          Support
-        </p>
-      </div>
-    </div>
-  </div>
-
-  {/* Right Featured Product */}
-  <div>
-    {featuredProducts?.length > 0 && (
-      <div className="bg-white rounded-3xl p-6 shadow-2xl max-w-md mx-auto">
-        <span className="tag">
-          Featured Product
+      {/* Left Content */}
+      <div className="text-white">
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-brand-accent/20 border border-brand-accent/30 text-brand-accent text-sm font-medium mb-6">
+          ✨ Quality Food Products
         </span>
 
-        <img
-          src={featuredProducts[0]?.images?.[0]}
-          alt={featuredProducts[0]?.name}
-          className="w-full h-64 object-cover rounded-2xl mt-4"
-        />
+        <h1 className="font-display text-5xl md:text-7xl font-semibold leading-[0.95] mb-6">
+          Purity.
+          <br />
+          Hygiene.
+          <br />
+          <span className="text-brand-accent">
+            Consistent Quality.
+          </span>
+        </h1>
 
-        <h3 className="font-display text-2xl font-semibold text-brand-ink mt-5">
-          {featuredProducts[0]?.name}
-        </h3>
-
-        <p className="text-brand-ink-light mt-3 line-clamp-3">
-          {featuredProducts[0]?.description}
+        <p className="text-lg text-white/80 leading-relaxed max-w-xl mb-8">
+          Trusted supplier of premium Sugar and Poha products,
+          delivering purity, hygiene and reliability for households,
+          retailers and wholesale partners.
         </p>
 
-        <Link
-          to="/products"
-          className="btn-primary w-full text-center block mt-5"
-        >
-          View Product
-        </Link>
+        <div className="flex flex-wrap gap-4 mb-10">
+          <Link to="/products" className="btn-primary">
+            Explore Products
+          </Link>
+
+          <Link
+            to="/contact"
+            className="px-8 py-3 rounded-full border border-white/30 hover:bg-white hover:text-brand-ink transition-all duration-300"
+          >
+            Contact Us
+          </Link>
+        </div>
+
+        {/* Trust Stats */}
+        <div className="grid grid-cols-3 gap-8 max-w-xl">
+          <div>
+            <h3 className="text-4xl font-bold text-brand-accent">
+              100%
+            </h3>
+            <p className="text-white/60 text-sm">
+              Quality Checked
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-brand-accent">
+              FSSAI
+            </h3>
+            <p className="text-white/60 text-sm">
+              Verified
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-brand-accent">
+              Trusted
+            </h3>
+            <p className="text-white/60 text-sm">
+              Supply
+            </p>
+          </div>
+        </div>
       </div>
-    )}
-  </div>
 
-</div>
-```
+      {/* Featured Product Card */}
+      <div className="hidden lg:block">
+        {featuredProducts?.length > 0 && (
+          <div className="bg-white rounded-3xl p-6 shadow-2xl max-w-md ml-auto">
 
+            <div className="flex items-center justify-between mb-4">
+              <span className="tag">
+                Featured Product
+              </span>
+
+              <span className="text-brand-accent text-sm">
+                ★★★★★
+              </span>
+            </div>
+
+            <img
+              src={featuredProducts[0]?.images?.[0]}
+              alt={featuredProducts[0]?.name}
+              className="w-full h-56 object-cover rounded-2xl"
+            />
+
+            <h3 className="font-display text-2xl font-semibold text-brand-ink mt-5">
+              {featuredProducts[0]?.name}
+            </h3>
+
+            <p className="text-brand-ink-light mt-3 line-clamp-3">
+              {featuredProducts[0]?.description}
+            </p>
+
+            <Link
+              to={`/products`}
+              className="btn-primary w-full text-center block mt-5"
+            >
+              View Product
+            </Link>
+          </div>
+        )}
+      </div>
+
+    </div>
   </div>
 </section>
 
