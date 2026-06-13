@@ -33,14 +33,6 @@ const Home = () => {
 {/* Hero Section */}
 <section
   className="relative min-h-[60vh] flex items-center justify-center bg-cover bg-center"
-  {/* Admin Login Button */}
-<div className="absolute top-6 right-6 z-20">
-  <Link
-    to="/admin/login"
-    className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-5 py-2 rounded-full hover:bg-white hover:text-brand-ink transition-all duration-300 text-sm font-medium"
-  >
-    Admin Login
-  </Link>
 </div>
   style={{
     backgroundImage: `url(${heroImage})`,
