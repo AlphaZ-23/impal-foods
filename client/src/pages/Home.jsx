@@ -42,7 +42,15 @@ const Home = () => {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B3D2E]/90 via-[#0F5132]/85 to-[#145A32]/80"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
+
+<div
+  className="absolute inset-0"
+  style={{
+    background:
+      "linear-gradient(90deg, rgba(5,45,35,0.75) 0%, rgba(8,65,45,0.65) 50%, rgba(12,90,55,0.55) 100%)",
+  }}
+></div>
 
         <div className="relative container-custom z-10 py-16">
           <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
