@@ -5,17 +5,18 @@ export default {
     extend: {
       colors: {
         brand: {
-          cream: '#FBF9F4',
+          cream: '#F6F8F4',
           surface: '#FFFFFF',
-          sand: '#EEF1E8',
-          border: '#DCE3D4',
-          ink: '#23291F',
-          'ink-light': '#6E7568',
+          sand: '#E9EFE4',
+          border: '#D4E0CC',
+          ink: '#13321F',
+          'ink-light': '#5C6E5C',
           accent: '#D9A23B',
           'accent-dark': '#B9842A',
           'accent-light': '#F7E6BD',
           green: '#0C3D26',
-          'green-light': '#13502F',
+          'green-dark': '#0A2E1B',
+          'green-light': '#1F5C39',
         },
       },
       fontFamily: {
