@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://impal-foods.onrender.com//api',
 });
 
 // Attach token to every request if available
