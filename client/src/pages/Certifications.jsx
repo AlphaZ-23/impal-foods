@@ -75,7 +75,7 @@ const Certifications = () => {
 
             <div className="inline-flex items-center justify-center px-6 py-3 bg-brand-sand border border-brand-border rounded-xl">
               <span className="font-medium text-brand-ink">
-                FSSAI License No: YOUR_FSSAI_LICENSE_NUMBER
+                FSSAI License No: 21426850005367
               </span>
             </div>
 
