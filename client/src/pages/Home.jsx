@@ -48,7 +48,7 @@ const Home = () => {
   className="absolute inset-0"
   style={{
     background:
-      "linear-gradient(90deg, rgba(5,45,35,0.75) 0%, rgba(8,65,45,0.65) 50%, rgba(12,90,55,0.55) 100%)",
+      "linear-gradient(90deg, rgba(10,46,27,0.92) 0%, rgba(12,61,38,0.78) 55%, rgba(12,61,38,0.45) 100%)",
   }}
 ></div>
 
