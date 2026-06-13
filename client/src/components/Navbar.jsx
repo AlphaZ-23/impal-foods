@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
+import logo from '../assets/logo.png';
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
@@ -17,21 +17,23 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-brand-cream/85 border-b border-brand-border">
       <div className="container-custom flex items-center justify-between py-4">
 
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center text-white font-display font-semibold">
-            IF
-          </div>
+       <Link to="/" className="flex items-center gap-3">
+  <img
+    src={logo}
+    alt="Impal Foods Logo"
+    className="h-12 w-auto object-contain"
+  />
 
-          <div>
-            <h1 className="font-display text-xl font-semibold text-brand-ink leading-none">
-              Impal <span className="text-brand-accent">Foods</span>
-            </h1>
-            <p className="text-xs text-brand-ink-light tracking-wider">
-              PURITY • TRUST • QUALITY
-            </p>
-          </div>
-        </Link>
+  <div>
+    <h1 className="font-display text-xl font-semibold text-brand-ink leading-none">
+      Impal <span className="text-brand-accent">Foods</span>
+    </h1>
+
+    <p className="text-xs text-brand-ink-light tracking-wider">
+      PURITY • TRUST • QUALITY
+    </p>
+  </div>
+</Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
