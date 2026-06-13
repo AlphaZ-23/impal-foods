@@ -109,13 +109,7 @@ const Navbar = () => {
             </NavLink>
           ))}
 
-          <Link
-            to="/contact"
-            onClick={() => setIsOpen(false)}
-            className="bg-brand-accent text-white text-center py-3 rounded-full"
-          >
-            Get Quote
-          </Link>
+      
         </nav>
       )}
     </header>
