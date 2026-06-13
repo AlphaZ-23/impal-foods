@@ -37,9 +37,20 @@ const Footer = ({ content }) => {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-4 text-center text-sm text-white/50">
-        © {year} Impal Foods. All rights reserved.
-      </div>
+      <div className="border-t border-white/10 py-4">
+  <div className="container-custom flex flex-col sm:flex-row items-center justify-between gap-2 text-sm">
+    <p className="text-white/50">
+      © {year} Impal Foods. All rights reserved.
+    </p>
+
+    <Link
+      to="/admin/login"
+      className="text-xs text-white/40 hover:text-brand-accent transition-colors duration-300"
+    >
+      Admin Login
+    </Link>
+  </div>
+</div>
     </footer>
   );
 };
