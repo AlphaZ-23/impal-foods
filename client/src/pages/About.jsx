@@ -42,11 +42,10 @@ const About = () => {
 
           <p className="text-brand-ink-light leading-relaxed text-lg">
             {content?.aboutStory ||
-              'At Impal Foods, we believe that great food is a journey of passion, purity, and precision. Our story begins at the very root, where we carefully select only the finest and highest-quality raw ingredients. From there, the magic moves to our state-of-the-art manufacturing facility, where we combine traditional tastes with modern technology while maintaining the strictest hygiene and quality standards at every step.'}
+              'At Impal Foods, we believe that great food is a journey of passion, purity, and precision. Our story begins at the very root, where we carefully select only the finest and highest-quality raw ingredients. From there, the magic moves to our state-of-the-art manufacturing facility. Here, we combine traditional tastes with modern technology, maintaining the strictest hygiene and quality standards at every single step.'}
           </p>
 
           <p className="text-brand-ink-light leading-relaxed text-lg mt-4">
-            At Impal Foods, we believe that great food is a journey of passion, purity, and precision. Our story begins at the very root, where we carefully select only the finest and highest-quality raw ingredients. From there, the magic moves to our state-of-the-art manufacturing facility. Here, we combine traditional tastes with modern technology, maintaining the strictest hygiene and quality standards at every single step.
             But our job doesn’t end at production. We pack our products with utmost care to lock in freshness and flavor. Through a seamless supply chain and trusted delivery network, we ensure that our products travel safely from our factory floor straight to your local stores and doorstep. From our hands to your heart, Impal Foods is dedicated to delivering freshness, trust, and happiness in every bite.
           </p>
         </div>
