@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import swachhBharat from '../assets/swachh-bharat.png';
+import keepClean from '../assets/keep-clean.png';
+import makeInIndia from '../assets/make-in-india.png';
 
 const Footer = ({ content }) => {
   const year = new Date().getFullYear();
@@ -96,6 +99,27 @@ const Footer = ({ content }) => {
                 'impalfoodscontact@gmail.com'}
             </li>
           </ul>
+        </div>
+      </div>
+
+      {/* Badges */}
+      <div className="border-t border-white/10 py-6">
+        <div className="container-custom flex flex-wrap items-center justify-center gap-8">
+          <img
+            src={swachhBharat}
+            alt="Swachh Bharat"
+            className="h-12 w-auto object-contain bg-white rounded-md p-1.5"
+          />
+          <img
+            src={keepClean}
+            alt="Keep India Clean"
+            className="h-12 w-auto object-contain bg-white rounded-md p-1.5"
+          />
+          <img
+            src={makeInIndia}
+            alt="Make in India"
+            className="h-12 w-auto object-contain bg-white rounded-md p-1.5"
+          />
         </div>
       </div>
 
