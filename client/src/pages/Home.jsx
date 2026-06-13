@@ -33,7 +33,6 @@ const Home = () => {
 {/* Hero Section */}
 <section
   className="relative min-h-[60vh] flex items-center justify-center bg-cover bg-center"
-</div>
   style={{
     backgroundImage: `url(${heroImage})`,
   }}
