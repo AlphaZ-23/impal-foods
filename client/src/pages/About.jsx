@@ -28,9 +28,7 @@ const About = () => {
         <div className="container-custom text-center">
           <h1 className="section-title">About Us</h1>
           <p className="section-subtitle mx-auto">
-            At Impal Foods, we believe that great food is a journey of passion, purity, and precision. Our story begins at the very root, where we carefully select only the finest and highest-quality raw ingredients. From there, the magic moves to our state-of-the-art manufacturing facility. Here, we combine traditional tastes with modern technology, maintaining the strictest hygiene and quality standards at every single step.
-
-But our job doesn’t end at production. We pack our products with utmost care to lock in freshness and flavor. Through a seamless supply chain and trusted delivery network, we ensure that our products travel safely from our factory floor straight to your local stores and doorstep. From our hands to your heart, Impal Foods is dedicated to delivering freshness, trust, and happiness in every bite.
+            From our hands to your heart — Impal Foods is dedicated to delivering freshness, trust, and happiness in every bite.
           </p>
         </div>
       </section>
@@ -44,7 +42,11 @@ But our job doesn’t end at production. We pack our products with utmost care t
 
           <p className="text-brand-ink-light leading-relaxed text-lg">
             {content?.aboutStory ||
-              'Impal Foods is a wholesale supplier committed to delivering quality food products with a focus on purity, hygiene, and consistency. We work with trusted sourcing and quality control practices to ensure reliable products for retailers, distributors, and consumers.'}
+              'At Impal Foods, we believe that great food is a journey of passion, purity, and precision. Our story begins at the very root, where we carefully select only the finest and highest-quality raw ingredients. From there, the magic moves to our state-of-the-art manufacturing facility, where we combine traditional tastes with modern technology while maintaining the strictest hygiene and quality standards at every step.'}
+          </p>
+
+          <p className="text-brand-ink-light leading-relaxed text-lg mt-4">
+            Our job doesn't end at production. We pack our products with utmost care to lock in freshness and flavor, and through a seamless supply chain and trusted delivery network, we ensure that our products travel safely from our factory floor straight to your local stores and doorstep.
           </p>
         </div>
       </section>
